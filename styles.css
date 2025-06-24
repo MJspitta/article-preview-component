@@ -168,3 +168,32 @@ main {
   opacity: 1;
   pointer-events: all;
 }
+
+@media screen and (max-width: 650px) {
+  
+
+  .container {
+    flex-direction: column;
+  }
+
+  .img {
+    height: 250px;
+  }
+  .img img {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .article {
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .article h1 {
+    font-size: 1.3rem;
+  }
+
+  .socials {
+    right: 3rem;
+    bottom: -1rem;
+  }
+}
