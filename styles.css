@@ -28,13 +28,13 @@ p {
 
 main {
   width: 100%;
-  max-width: 850px;
+  max-width: 750px;
 }
 
 .container {
   display: flex;
   border-radius: 1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
@@ -47,6 +47,7 @@ main {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .article {
@@ -56,6 +57,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 0 1rem 1rem 0;
 }
 .article h1 {
   font-size: 1.6rem;
@@ -144,7 +146,7 @@ main {
 .socials::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
   border-width: 10px 10px 0;
