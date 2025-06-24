@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem
+}
+
+h1, h2 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+p {
+  color: hsl(214, 17%, 51%);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+  max-width: 850px;
+}
+
+.container {
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.img {
+  flex: 1.2;
+  min-height: 100%;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.article {
+  flex: 1.8;
+  background-color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.article > p {
+  margin-bottom: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author img {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+}
+
+.author-details h2 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.author-details p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.share-btn {
+  background-color: hsl(210, 46%, 95%);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+  position: relative;
+}
+.share-btn:hover {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.share-btn i {
+  color: hsl(214, 17%, 51%);
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.share-btn:hover i {
+  color: white;
+}
+
+/* Handle Socials popup */
+
+.share-container {
+  position: relative;
+}
+.socials {
+  position: absolute;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  padding: 1.2rem 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  right: -6rem;
+  bottom: 3.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.socials::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: hsl(217, 19%, 35%) transparent transparent;
+}
+.socials p {
+  color: hsl(212, 23%, 69%);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.socials a {
+  color: white;
+  font-size: 1.4rem;
+}
+.socials.active {
+  opacity: 1;
+  pointer-events: all;
+}
