@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Article Preview Solution](https://your-solution-url.com)
+- Solution URL: [Article Preview Solution](https://www.frontendmentor.io/solutions/article-preview-component-n3RNTd1JS-)
 - Live Site URL: [Article Preview Live Site](https://mjspitta.github.io/article-preview-component/)
 
 ## My process
