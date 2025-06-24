@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Article Preview Solution](https://your-solution-url.com)
+- Live Site URL: [Article Preview Live Site](https://mjspitta.github.io/article-preview-component/)
 
 ## My process
 
